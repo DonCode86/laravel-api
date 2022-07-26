@@ -12563,7 +12563,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Daniele\Desktop\Boolean\laravel-one-to-many\resources\js\front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! C:\Users\Daniele\Desktop\Boolean\laravel-api\resources\js\front.js */"./resources/js/front.js");
 
 
 /***/ })

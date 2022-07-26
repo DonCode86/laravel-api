@@ -1,6 +1,11 @@
 <template>
     <div>
-        <h1>Vuejs</h1>
+        <h1>Blog</h1>
+        <ul>
+            <li v-for="post in posts" :key="post.slug">
+                {{ post.title }}
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -16,7 +21,7 @@ export default {
         axios
             .get("http://127.0.0.1:8000/api/posts")
             .then((response) => {
-                console.log(response);
+                this.posts = response.data;
             })
             .catch((e) => {
                 console.log(e);

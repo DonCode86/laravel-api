@@ -31,13 +31,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.posts {
-    background-color: var(--bg-section-light);
-    padding: 3.125rem 0;
-    ul {
-        padding: 0;
-        list-style: none;
-    }
-}
-</style>
+<style lang="scss" scoped></style>

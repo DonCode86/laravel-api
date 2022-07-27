@@ -1,5 +1,7 @@
 <template>
-    <main></main>
+    <main>
+        <PostsSection />
+    </main>
 </template>
 
 <script>

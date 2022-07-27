@@ -2258,7 +2258,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".card[data-v-00be596c] {\n  background-color: #fff;\n  border-radius: 1.25rem;\n  padding: 0.625rem;\n  box-shadow: 0 0 5px 2px #ddd;\n}", ""]);
 
 // exports
 

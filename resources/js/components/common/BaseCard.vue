@@ -1,11 +1,8 @@
 <template>
     <div class="card">
-        <h3>Il titolo del Post</h3>
+        <h3>{{ title }}</h3>
         <div class="card-content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab error
-            quo molestias rerum sunt eius illum. Laudantium, repellendus aperiam
-            dicta quaerat veniam, at fugit labore ullam sed, facilis fugiat
-            illo?
+            {{ content }}
         </div>
         <a href="#">Leggi di più</a>
     </div>
@@ -14,6 +11,14 @@
 <script>
 export default {
     name: "BaseCard",
+    props: {
+        title: {
+            type: String,
+        },
+        content: {
+            type: String,
+        },
+    },
 };
 </script>
 

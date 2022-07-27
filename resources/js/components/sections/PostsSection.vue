@@ -3,7 +3,7 @@
         <div class="container">
             <ul class="row">
                 <li class="col-4 mb-5" v-for="post in posts" :key="post.slug">
-                    <BaseCard />
+                    <BaseCard :title="post.title" :content="post.content" />
                 </li>
             </ul>
         </div>

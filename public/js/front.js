@@ -1909,7 +1909,15 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "BaseCard"
+  name: "BaseCard",
+  props: {
+    title: {
+      type: String
+    },
+    content: {
+      type: String
+    }
+  }
 });
 
 /***/ }),
@@ -2048,23 +2056,18 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
-};
-
-var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
   return _c("div", {
     staticClass: "card"
-  }, [_c("h3", [_vm._v("Il titolo del Post")]), _vm._v(" "), _c("div", {
+  }, [_c("h3", [_vm._v(_vm._s(_vm.title))]), _vm._v(" "), _c("div", {
     staticClass: "card-content"
-  }, [_vm._v("\n        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab error\n        quo molestias rerum sunt eius illum. Laudantium, repellendus aperiam\n        dicta quaerat veniam, at fugit labore ullam sed, facilis fugiat\n        illo?\n    ")]), _vm._v(" "), _c("a", {
+  }, [_vm._v("\n        " + _vm._s(_vm.content) + "\n    ")]), _vm._v(" "), _c("a", {
     attrs: {
       href: "#"
     }
   }, [_vm._v("Leggi di più")])]);
-}];
+};
+
+var staticRenderFns = [];
 render._withStripped = true;
 
 
@@ -2208,7 +2211,12 @@ var render = function render() {
     return _c("li", {
       key: post.slug,
       staticClass: "col-4 mb-5"
-    }, [_c("BaseCard")], 1);
+    }, [_c("BaseCard", {
+      attrs: {
+        title: post.title,
+        content: post.content
+      }
+    })], 1);
   }), 0)])]);
 };
 

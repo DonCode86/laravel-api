@@ -1964,10 +1964,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sections_PostsSection_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sections/PostsSection.vue */ "./resources/js/components/sections/PostsSection.vue");
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "BaseMain",
-  components: {
-    PostsSection: _sections_PostsSection_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
-  }
+  name: "BaseMain"
 });
 
 /***/ }),
@@ -2177,7 +2174,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("main", [_c("PostsSection")], 1);
+  return _c("main", [_c("router-view")], 1);
 };
 
 var staticRenderFns = [];

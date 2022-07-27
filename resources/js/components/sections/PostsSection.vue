@@ -3,7 +3,7 @@
         <div class="container">
             <ul class="row">
                 <li class="col-4 mb-5" v-for="post in posts" :key="post.slug">
-                    {{ post.title }}
+                    <BaseCard />
                 </li>
             </ul>
         </div>
@@ -11,12 +11,16 @@
 </template>
 
 <script>
+import BaseCard from "../common/BaseCard.vue";
 export default {
     name: "PostsSection",
     data() {
         return {
             posts: [],
         };
+    },
+    components: {
+        BaseCard,
     },
     created() {
         axios
@@ -31,4 +35,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.posts {
+    background-color: var(--bg-section-light);
+    padding: 3.125rem 0;
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+}
+</style>
